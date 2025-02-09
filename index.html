@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en, pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fânio Panga">
+    <meta name="description" content="Site de street art (arte das ruas) com galeria de imagens, informações sobre artistas de rua">
+    <meta name="keywords" content="street art, arte de rua, graffiti, arte urbana, HTML, CSS">
+    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="content-security-privacy">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="">
+    <meta property="og:locale" content="pt_AO">
+    <meta property="og:title" content="street art">
+    <meta property="og:description" content="Site de Street art (arte das ruas) com galeria de imagens, informações sobre artistas de rua">
+    <meta property="og:url" content="">
+    <link rel="shortcut icon" href="./images/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/mobile-first.css">
+    <link rel="stylesheet" href="./css/larger-screens.css" media="screen and (width > 600px)">
+    <title>Street Art</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#art-myart">MY ART</a>
+            <a href="#sect-about" style="float: right;">About</a>
+        </nav>
+    </header>
+    <main>
+        <article id="art-myart">
+            <div class="art-item item1">
+                <img class="img-item" src="./images/streetart.jpg" alt="streetart">
+                <img class="img-item" src="./images/streetart2.jpg" alt="streetart">
+                <img class="img-item" src="./images/streetart5.jpg" alt="streetart">
+            </div>
+            <div class="art-item item4">
+                <img class="img-item" src="./images/streetart3.jpg" alt="streetart">
+                <img class="img-item img5" src="./images/streetart4.jpg" alt="streetart">
+            </div>
+        </article>
+
+        <section id="sect-about">
+                <h1>About</h1>
+                <div class="img-box">
+                    <img class="img-boy" src="./images/boy.jpg" alt="a boy seing the sunshine" width="300">
+                </div>
+                <p>
+                    Just myself and I. Exploring the universe of unknownment. I have a hart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla
+                </p>
+                <h2>Do not hesitate to contact me!</h2>
+                <form action="" method="get" autocomplete="on">
+                    <label for="iname">Name</label>
+                    <input type="text" name="name" id="iname" required autocomplete="name">
+                    <label for="imail">Email</label>
+                    <input type="email" name="email" id="imail" required autocomplete="email">
+                    <label for="imessage">Message</label>
+                    <textarea name="message" id="imessage" required rows="1" style="resize: none;"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by <a href="#">Fânio Panga</a></p>
+    </footer>
+</body>
+</html>

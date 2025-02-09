@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+header nav, main article {
+    max-width: 1500px;
+    margin: 0 auto;   
+}
+
+main article {
+    flex-flow: row wrap;
+}
+
+.art-item {
+    width: calc(100% / 2);
+    height: auto;
+}

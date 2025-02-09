@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Ralaway';
+    src: url('../fonts/Raleway/static/Raleway-Regular.ttf') format(truetype);
+}
+
+@font-face {
+    font-family: 'Ralaway-Regular';
+    src: url('../fonts/Raleway/static/Raleway-Regular.ttf') format(truetype);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('../fonts/Raleway/static/Raleway-Medium.ttf') format(truetype);
+}
+
+:root {
+    --font1: 'Raleway', sans-serif;
+    --font2: 'Ralaway-Regular', sans-serif;
+    --font3: 'Raleway-Medium', sans-serif;
+    --text-color: #000;
+    --link-background: #d4d4d4;
+    --heading-text: #ea2969;
+    --background-color1: #fff;
+    --background-color2: #f1f1f1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+    transition: width .5s ease-in-out, height .5s ease-in-out;
+}
+
+/* HEADER */
+header {padding: 24px 18px;}
+
+nav a {
+    display: inline-block;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-family: var(--font2);
+    font-size: 1.5em;
+    font-weight: 100;
+    color: var(--text-color);
+}
+
+nav a:hover {background: var(--link-background);}
+
+/* ARTICLE ARTS */
+main article {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+main article div > .img-item{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+main section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: var(--background-color2);
+}
+
+main section h1 {
+    font-family: var(--font3);
+    font-size: 1.7em;
+    padding: 25px;
+}
+
+.img-box {
+    margin: 25px 0;
+}
+
+main section p {
+    width: 66%;
+    padding: 15px 0;
+    margin: 0 auto;
+    font-family: var(--font2);
+    font-size: 1em;
+    text-align: center;
+}
+
+main section h2 {
+    width: 66%;
+    margin: 0 auto;
+    padding: 10px 0;
+    color: var(--heading-text);
+    font-family: var(--font2);
+    font-size: 1.2em;
+}
+
+main section form {
+    display: block;
+    width: 66%;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    padding: 20px 0 5px;
+    font-family: var(--font3);
+    font-size: 1em;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00000037;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #5d5d5d;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    color: #000;
+    cursor: pointer;
+    background-color: #cdcdcd;
+}
+
+footer {
+    padding-bottom: 80px;
+    text-align: center;
+    background-color: var(--background-color2);
+}
+
+footer p, footer a {
+    color: var(--text-color);
+    font-family: var(--font2);
+}
